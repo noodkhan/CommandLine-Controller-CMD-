@@ -70,7 +70,7 @@
         <p>The <code>convert_to_html()</code> function takes the output of the shell command and formats it into HTML.</p>
         <p>It wraps the command output inside a <code>&lt;pre&gt;</code> tag to preserve its formatting.</p>
         <h3>3. Saving the HTML File</h3>
-        <p>The <code>save_html()</code> function saves the generated HTML to a file, <code>command_output.html</code>.</p>\
+        <p>The <code>save_html()</code> function saves the generated HTML to a file, <code>command_output.html</code>.</p>
         <h3>Python Code:</h3>
         <pre><code>
 import subprocess
