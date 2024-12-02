@@ -42,7 +42,5 @@
         <pre><code>command = "ls -l"</code></pre>
         <p>Then, run the script:</p>
         <pre><code>python cmd_to_html.py</code></pre>
-        <h2>Output</h3>
-        <p>The generated HTML file will contain the command output wrapped in a <code>&lt;pre&gt;</code> tag. Here's an example of what the HTML will look like:</p>
 </body>
 </html>
