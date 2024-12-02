@@ -10,7 +10,6 @@
         <h1>Command Output to HTML Converter</h1>
         <p>This Python script runs shell commands and converts the command output to an HTML document format.</p>
     </header>
-
     <section>
         <h2>Features</h2>
         <ul>
@@ -19,7 +18,6 @@
             <li>Saves the HTML output to a file for easy viewing in a browser.</li>
         </ul>
     </section>
-
     <section>
         <h2>Installation</h2>
         <p>Follow the steps below to set up the script:</p>
@@ -33,22 +31,19 @@
             <li><strong>Ensure Python 3 is installed</strong>. The script is compatible with Python 3.7+.</li>
         </ol>
     </section>
-
     <section>
         <h2>Usage</h2>
-        <h3>Running the Script</h3>
+        <h2>Running the Script</h3>
         <p>To run the script, simply execute it from the command line:</p>
         <pre><code>python cmd_to_html.py</code></pre>
         <p>By default, the script will run the command <code>echo Hello, this is a test command!</code> and save the output as an HTML file.</p>
-
-        <h3>Customizing the Command</h3>
+        <h2>Customizing the Command</h3>
         <p>To run your own command and convert its output to HTML, modify the <code>command</code> variable inside the script or pass the command as an argument.</p>
         <p>For example, open the <code>cmd_to_html.py</code> script and modify the <code>command</code> variable:</p>
         <pre><code>command = "ls -l"</code></pre>
         <p>Then, run the script:</p>
         <pre><code>python cmd_to_html.py</code></pre>
-
-        <h3>Output</h3>
+        <h2>Output</h3>
         <p>The generated HTML file will contain the command output wrapped in a <code>&lt;pre&gt;</code> tag. Here's an example of what the HTML will look like:</p>
         <pre><code>
 &lt;!DOCTYPE html&gt;
@@ -66,21 +61,17 @@
         </code></pre>
         <p>The output file will be saved as <code>command_output.html</code> in the same directory.</p>
     </section>
-
     <section>
         <h2>Code Explanation</h2>
-        <h3>1. Running the Command</h3>
+        <h2>1. Running the Command</h3>
         <p>The <code>run_command()</code> function uses Python's <code>subprocess</code> module to run shell commands.</p>
         <p>The <code>subprocess.run()</code> function captures both the standard output and the error output from the shell command.</p>
-
-        <h3>2. Converting Output to HTML</h3>
+        <h2>2. Converting Output to HTML</h3>
         <p>The <code>convert_to_html()</code> function takes the output of the shell command and formats it into HTML.</p>
         <p>It wraps the command output inside a <code>&lt;pre&gt;</code> tag to preserve its formatting.</p>
-
-        <h3>3. Saving the HTML File</h3>
+        <h2>3. Saving the HTML File</h3>
         <p>The <code>save_html()</code> function saves the generated HTML to a file, <code>command_output.html</code>.</p>
-
-        <h3>Python Code:</h3>
+        <h2>Python Code:</h3>
         <pre><code>
 import subprocess
 import os
@@ -120,7 +111,6 @@ def save_html(html_content, filename="command_output.html"):
 if __name__ == "__main__":
     # Example command to run
     command = "echo Hello, this is a test command!"
-    
     # Run the command
     command_output = run_command(command)
     
